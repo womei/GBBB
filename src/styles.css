@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+
+.app {
+  font-family: sans-serif;
+  text-align: center;
+  clear: both;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 8fr 2fr;
+  gap: 10px 0px;
+  grid-template-areas:
+    "appBar appBar appBar"
+    "movieCard movieCard movieCard"
+    "badBad skip goodBad";
+
+  text-align: center;
+  vertical-align: middle;
+  background-color: lightsteelblue;
+}
+.siteName {
+  font-size: 1em;
+}
+.appBar {
+  grid-area: appBar;
+}
+
+.movieCard {
+  grid-area: movieCard;
+  margin: 0 8px;
+}
+.moviePoster {
+  height: 60vh;
+  background-position: center top;
+}
+.badBad {
+  background-color: lightcoral;
+  grid-area: badBad;
+}
+.skip {
+  background-color: lightgrey;
+  grid-area: skip;
+}
+.goodBad {
+  background-color: lightseagreen;
+  grid-area: goodBad;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 150%;
+  border-radius: 25px;
+  margin: 0 4px 20px 4px;
+}

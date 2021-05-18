@@ -1,0 +1,31 @@
+.info-body {
+  font-family: sans-serif;
+  text-align: center;
+  clear: both;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+
+  text-align: center;
+  vertical-align: middle;
+}
+
+.header {
+  grid-area: header;
+  background-color: lightsteelblue;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: lightsteelblue;
+}
